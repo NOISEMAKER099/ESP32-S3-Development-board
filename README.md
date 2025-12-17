@@ -13,6 +13,7 @@ and design decisions**, rather than firmware or application-level software.
 - [Block Diagram Overview](docs/block_diagram_overview.md)
 ![ESP32-S3 Block Diagram](diagrams/esp32_s3_block_diagram.png)
 - [Interface Overview](docs/interface_overview.md)
+- [Power Architecture](docs/power_architecture.md)
 
 
 ## Project Overview
