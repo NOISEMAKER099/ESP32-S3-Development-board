@@ -1,21 +1,70 @@
-# ESP32-S3-Development-board
-Overview
+# ESP32-S3 Development Board
 
-This repository contains the design files, schematics, and documentation for a custom ESP32-S3 Development Board.
-The board is designed for IoT, AI, and embedded system projects, supporting USB programming, external PSRAM, and wireless connectivity (Wi-Fi + Bluetooth LE).
+This repository documents a **personal ESP32-S3 based development board**
+designed for learning, experimentation, and embedded systems development.
 
-Features
+The focus of this project is on **hardware design, board architecture,
+and design decisions**, rather than firmware or application-level software.
 
-ESP32-S3-WROOM/WROVER module (dual-core Xtensa LX7)
+---
 
-Optional 8 MB PSRAM (if using WROVER module)
+## Project Overview
 
-USB Type-C / Micro-USB connector for power and flashing
+The ESP32-S3 Development Board is intended as a flexible platform for:
+- Embedded systems learning
+- IoT and connectivity-based experiments
+- Custom peripheral interfacing and prototyping
 
-On-board LDO regulator (5V → 3.3V)
+The board is designed to support USB-based programming,
+stable power regulation, and easy GPIO access for development work.
 
-Boot & Reset buttons for easy flashing
+This repository follows a **documentation-first approach**, emphasizing
+clarity, structure, and design understanding.
 
-UART, SPI, I²C, I²S, ADC, PWM, and GPIO access
+---
 
-On-board LED (GPIO indicator)
+## Key Design Features
+
+- ESP32-S3 based microcontroller platform
+- USB interface for power and programming
+- On-board voltage regulation (5 V to 3.3 V)
+- Boot and reset circuitry for flashing and debugging
+- Accessible GPIOs for common interfaces (UART, SPI, I²C, ADC, PWM)
+- On-board status LED for basic indication
+
+---
+
+## Repository Structure
+
+
+---
+
+## Design Focus Areas
+
+- Power supply and regulation strategy
+- Boot configuration and reset logic
+- GPIO planning and interface availability
+- USB connectivity and signal routing considerations
+- Hardware reliability and layout awareness
+
+---
+
+## Tools Used
+
+- KiCad for schematic capture and PCB layout
+- ESP-IDF / Arduino (planned firmware compatibility)
+
+---
+
+## Disclaimer
+
+This is a **personal hardware project** created for educational
+and learning purposes.  
+It is **not intended for commercial or safety-critical applications**.
+
+---
+
+## Author
+
+Smit Gaikwad  
+Electronics & Telecommunication Engineer  
