@@ -78,6 +78,13 @@ It is **not intended for commercial or safety-critical applications**.
 
 ---
 
+## Project Status
+
+This project is considered **functionally complete**.
+Future updates, if any, will focus on incremental improvements
+or learning-based enhancements.
+
+
 ## Author
 
 Smit Gaikwad  
