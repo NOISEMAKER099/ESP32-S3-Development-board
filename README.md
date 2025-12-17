@@ -8,6 +8,13 @@ and design decisions**, rather than firmware or application-level software.
 
 ---
 
+## System Documentation
+
+- [Block Diagram Overview](docs/block_diagram_overview.md)
+
+![ESP32-S3 Block Diagram](diagrams/esp32_s3_block_diagram.png)
+
+
 ## Project Overview
 
 The ESP32-S3 Development Board is intended as a flexible platform for:
