@@ -16,6 +16,8 @@ and design decisions**, rather than firmware or application-level software.
 - [Power Architecture](docs/power_architecture.md)
 - [Boot, Reset & Programming Flow](docs/boot_reset_programming.md)
 - [Board Visuals](docs/board_visuals.md)
+- [Schematic Overview](hardware/schematics/schematic_overview.md)
+
 ### Board Images
 ![ESP32-S3 Board](images/esp32_s3_board_top.png)
 
