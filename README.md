@@ -63,6 +63,63 @@ With USB-based programming, stable power regulation, and an accessible GPIO pin 
 
 ---
 
+## Prerequisites
+
+Before starting, ensure you have:
+- A USB Type-C cable for board connectivity and flashing.
+- [ESP-IDF Framework](https://github.com/espressif/esp-idf) or Arduino IDE installed on your computer.
+- Python 3.6+ (required for ESP-IDF environment setup).
+- [USB-to-Serial Driver](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers) (if required).
+
+---
+
+## Getting Started with the Development Board
+
+### 1. Hardware Setup
+- Connect the ESP32-S3 Development Board to your computer using a USB cable.
+- Verify that the onboard status LED lights up when the board is powered.
+
+### 2. Install ESP-IDF or Arduino
+- Follow the [ESP-IDF Getting Started Guide](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/).
+- Alternatively, install the Arduino IDE.
+
+### 3. Flashing Firmware
+- Compile your code using `idf.py build` or Arduino IDE, and flash it to the board:
+  ```bash
+  idf.py flash
+
+---
+
+## Pin Layout
+
+| GPIO Pin | Function              | Notes                          |
+|----------|-----------------------|--------------------------------|
+| GPIO0    | Boot and Reset Button | Used for programming and reset |
+| GPIO1    | TXD (UART TX)         | Serial communication (output)  |
+| GPIO3    | RXD (UART RX)         | Serial communication (input)   |
+| GPIO4    | GPIO                  | General-purpose I/O pin        |
+| GPIO38   | GPIO with Pull-up     | Supports embedded pull-up      |
+| GPIO21   | GPIO for SK6812 LED   | Drives onboard RGB LED         |
+| GPIO5    | Digital GPIO          | General-purpose output pin     |
+
+---
+
+### Additional Notes:
+1. **Power Pins:**
+   - **VCC_3V3**: Supplies regulated 3.3V power to the ESP32-S3 and peripherals.
+   - **GND**: Ground connection points throughout the design.
+
+2. **USB Pins:**
+   - **USB_DM (D-)** and **USB_DP (D+)**: USB signal routing for programming and communication.
+   - **VBUS**: Detects USB power supply (5V).
+
+3. **Special Features:**
+   - **GPIO21**: Directly connected to the onboard RGB LED (SK6812), useful for indicating status or debugging output.
+   - **GPIO0**: Dual-use pin for boot mode selection and reset.
+  
+   ---
+   
+
 ## Design Focus Areas
 
 Key aspects of the design include:
@@ -85,8 +142,34 @@ The following tools were used during development:
 
 ## Disclaimer
 
-This is a **personal hardware project** for education and learning.  
-**Not intended for commercial or safety-critical applications.**
+This is a **personal hardware project** for educational purposes.  
+**Not intended for commercial or safety-critical applications.** Use at your own risk.
+
+---
+
+## Contribution Guidelines
+
+Contributions are welcome! If you notice any issues or want to improve the design/documentation:
+1. Fork this repository.
+2. Create a feature branch for your improvements.
+3. Open a pull request with a description of changes.
+
+For major updates, open an issue to discuss the feature or improvement!
+
+---
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Future Enhancements
+
+- Firmware examples for common IoT applications.
+- Expandable GPIO breakouts for additional peripherals.
+- Battery-powered operation (optional add-on board).
+- 3D-printed enclosure designs.
 
 ---
 
